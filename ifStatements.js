@@ -11,7 +11,7 @@
   // if it is snowy, print "coat"
   // if it is icy, print "yak traks"
 
-var weather = "sunny"
+var weather = "windy"
 
 if (weather === "sunny") {
   console.log("sunscreen");
@@ -42,10 +42,13 @@ if (weather === "sunny") {
 // Experiment with manipulating the value held within numQuarters
 // to make sure both conditions can be achieved.
 
-var numQuarters = 0
+var numQuarters = 4
+if (numQuarters >= 2) {
+  console.log("I have enough money for a gumball");
+} else {
+  console.log("I don't have enough money for a gumball");
+}
 
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
 
 
 // #####################
@@ -53,7 +56,7 @@ console.log("I don't have enough money for a gumball");
 // if you have the ingredients to make a pizza. A pizza requires 
 // at least two cups of flour and sauce.
 
-// You should be able to change the variables to achieve the following outconsole.log();
+// You should be able to change the variables to achieve the following output;
 // If cupsOfFlour = 1 and hasSauce = true, print "I cannot make pizza"
 // If cupsOfFlour = 5 and hasSauce = false, print "I cannot make pizza"
 // If cupsOfFlour = 2 and hasSauce = true, print "I can make pizza"
@@ -62,6 +65,11 @@ console.log("I don't have enough money for a gumball");
 // Experiment with manipulating the value held within both variables
 // to make sure all above conditions output what you expect.
 
-var cupsOfFlour = 1;
+var cupsOfFlour = 3;
 var hasSauce = true;
 
+if (cupsOfFlour >= 2 && hasSauce) {
+  console.log("I can make pizza");
+} else {
+  console.log("I cannot make pizza")
+}
